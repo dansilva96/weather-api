@@ -9,7 +9,8 @@ async function getWeather(req, res) {
 
     try {
         const data = await weatherService.getApi(city)
-        res.json(data)
+        return res.json(data)
+
     } catch (error) {
         if (error.message === "CITY_NOT_FOUND") {
             return res.status(404).json({ 
@@ -21,6 +22,10 @@ async function getWeather(req, res) {
                 error: "There's a problem on the server side, please try again later" 
             })
         }
+
+        return res.status(500).json({
+            error: "Unexpected error"
+        })
     }
 }
 
