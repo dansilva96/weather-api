@@ -73,7 +73,7 @@ npm start
 ### 5. Open in browser
 
 ```
-http://localhost:3000
+http://localhost:3000/weather
 ```
 
 ---
