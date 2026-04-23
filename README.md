@@ -4,6 +4,14 @@ A RESTful API for real-time weather data, featuring Redis caching and rate limit
 
 ---
 
+## Inspiration
+
+This project was inspired by the **Weather API** from:
+
+https://roadmap.sh/projects/weather-api-wrapper-service
+
+---
+
 ## Technologies
 
 - Node.js
